@@ -1,2 +1,2 @@
 # CP
-Competitive programming question ans solutions. 
+Competitive programming question and solutions. 
