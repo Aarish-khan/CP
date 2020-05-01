@@ -77,7 +77,7 @@ void find_middle(struct node *const head){
 		return;
 	}
 
-	//for every other case
+	//If control comes here means link list contain more than 2 element
 	//there might be a case where i am at second last node and doing head_ref->next->next will take me out of 
 	//link list, So it is better to first chect if there exist two nodes, 
 	// if there exist two nodes then jump by 2 steps otherwise come out of loop
@@ -98,15 +98,16 @@ void find_middle(struct node *const head){
 int main()
 {	
 	struct node* head = NULL;
-
+	
+	//inserting sample elements in link list
 	for(int i=1; i<=10; i++){
 		head = insert_element(head,i);
 	}
 
-
+	//print the linked list
 	print_list(head);
 	cout<<endl;
-
+	//call the fuction that prints the value at middle
 	find_middle(head);
 
 }
