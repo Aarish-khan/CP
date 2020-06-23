@@ -43,8 +43,7 @@ void KMP(string text, string pattern){
 	while(i < text_size)
 	{
 		if(text[i]==pattern[j]){
-			i++;
-			j++;
+			i++; j++;
 		}
 		if(j==pattern_size)
 		{
