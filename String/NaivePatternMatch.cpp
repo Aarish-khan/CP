@@ -10,13 +10,12 @@ void NaivePatternMatch(string text, string pattern)
 	bool isFound = false;
 	for(int i=0; i+pattern_size<=text_size; i++)
 	{
-		int current_i = i;
 		//variable j, to traverse through pattern string
 		int j=0;
 		for(; j<pattern_size; j++)
 		{
-			if(text[current_i] == pattern[j])
-				++current_i;
+			if(text[i+j] == pattern[j])
+				continue;
 			else
 				break;
 		}
