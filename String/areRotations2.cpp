@@ -1,6 +1,6 @@
 bool areRotations(string s1,string s2)
 {
-    // Solution using inbuilt string method "find"
+    // Solution using inbuilt string method "find() method"
     if(s1.size()!=s2.size())
         return false;
         
