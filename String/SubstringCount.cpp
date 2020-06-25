@@ -40,3 +40,33 @@ Output:
 7
 22
 */
+#include <iostream>
+using namespace std;
+
+int main() {
+	//ct is number of test cases
+	int t; cin>>t;
+	while(t--)
+	{
+	    int n; cin>>n;
+	    string str; cin>>str;
+	    
+	    int char_count[26] = {0};
+	    
+	    for(int i=0; i<n; i++)
+	        char_count[str[i]-'a'] += 1;
+	    
+	    int ans = n;
+	    
+	    for(int i=0; i<26; i++)
+	    {
+	        int value = char_count[i];
+	        
+	        ans += (value*(value-1))/2;
+	    }
+	    
+	    cout<<ans<<"\n";
+	    
+	}
+	return 0;
+}
