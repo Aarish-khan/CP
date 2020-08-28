@@ -9,7 +9,7 @@ struct Node{
 	int data;
 	Node* lc;
 	Node* rc;
-
+//node constructor
 	Node(int x){
 		data = x;
 		lc = nullptr;
@@ -21,6 +21,7 @@ class BST{
 private:
 	struct Node* root;
 public:
+	//various BST consructor
 	BST(){
 		root = nullptr;
 	}
@@ -71,8 +72,7 @@ public:
 	void display(){
 		print(root);
 	}
-
-
+//class function to print the tree
 
 	void print(Node* root){
 		Node* curr = root;
