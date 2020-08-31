@@ -28,6 +28,7 @@ Expected Auxiliary Space: O(1).
 Constraints:
 1 <= Number of nodes <= 105
 1 <= Data of a node <= 105
+Note: just complete the function
 */
 
 int height(Node* root)
