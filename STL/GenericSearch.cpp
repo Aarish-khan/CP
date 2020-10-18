@@ -16,6 +16,7 @@ public:
 
 	}
 };
+//class to compare two books
 class BookCompare{
 
 public:
